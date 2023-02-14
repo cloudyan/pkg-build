@@ -1,2 +1,3 @@
-# build-pkg
-前端包构建编译
+# pkg-build
+
+npm 包构建编译
