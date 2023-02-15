@@ -1,0 +1,36 @@
+{
+  "name": "pkg-build",
+  "version": "0.0.1",
+  "description": "npm 包构建编译",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clear": "npx nx reset",
+    "build": "lerna run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudyan/pkg-build.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/cloudyan/pkg-build/issues"
+  },
+  "homepage": "https://github.com/cloudyan/pkg-build#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.5.1",
+    "nx": "^15.7.0"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "babel",
+  "private": true,
+  "version": "0.2.9",
+  "description": "check env",
+  "main": "lib/index.js",
+  "files": [
+    "./README.md",
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "babel src -s inline -d ./lib --ignore __tests__",
+    "build": "babel src -d lib --ignore __tests__",
+    "prepublish": "npm run build",
+    "test": "jest --no-cache --detectOpenHandles"
+  },
+  "keywords": [
+    "env",
+    "uni-env",
+    "deepjs"
+  ],
+  "author": "cloudyan <1395093509@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2"
+  },
+  "gitHead": "6237b837d0ad29b4002d13d16dd5536417d20278"
+}
