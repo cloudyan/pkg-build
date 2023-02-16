@@ -30,10 +30,30 @@ npm 包构建编译
       1. [father](https://github.com/umijs/father)
       2. @alib/build-scripts@0.1.18
       3. @ice/pkg@1.2.1
+   3. 要考虑构建输出 sourceMap
+      1. babel
+      2. webpack
+      3. typescript
 
 ## package.json 配置说明
 
+配置 package.json
 
+1. name
+2. version
+3. exports
+4. files
+5. type
+6. sideEffects
+7. main
+8. module
+9. cdn
+   1. unpkg
+   2. jsdelivr
+10. browser
+11. types
+12. peerDependencies
+13. license
 
 
 ## 构建输出 esm、cjs 和 umd 格式
@@ -54,21 +74,6 @@ npm 包构建编译
 8. 维护 changelog。记录更新和变更
 9. 拆分出 CSS 文件。让开发者能够按需引入 CSS
 10. 配置 package.json
-    1. name
-    2. version
-    3. exports
-    4. files
-    5. type
-    6. sideEffects
-    7. main
-    8. module
-    9. cdn
-       1. unpkg
-       2. jsdelivr
-    10. browser
-    11. types
-    12. peerDependencies
-    13. license
 
 ## UI 组件库构建输出
 
