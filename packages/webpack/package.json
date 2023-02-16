@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "export NODE_ENV=development && webpack",
     "build": "export NODE_ENV=production && webpack",
+    "webpack-1": "export NODE_ENV=production && webpack --config webpack.1.js",
+    "webpack-umd": "export NODE_ENV=production && webpack --config webpack.umd.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

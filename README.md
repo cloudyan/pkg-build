@@ -34,6 +34,19 @@ npm 包构建编译
       1. babel
       2. webpack
       3. typescript
+6. father
+   1. 双模式构建: Bundless 及 Bundle 两种构建模式
+      1. ESModule 和 CommonJS 产物使用 Bundless 模式
+      2. UMD 产物使用 Bundle 模式
+   2. 多构建核心
+      1. Bundle 模式使用 webpack 做构建核心
+      2. Bundless 模式支持 esbuild, Babel 及 SWC 三种构建核心，可通过配置自由切换
+   3. 类型生成: 无论是源码构建还是依赖预打包，都支持为 TypeScript 模块生成 .d.ts 类型定义
+   4. 持久缓存: 所有产物类型均支持持久缓存，二次构建或增量构建只需『嗖』的一下
+   5. 项目体检: 对 NPM 包研发常见误区做检查，让每一次发布都更加稳健
+   6. 微生成器: 为项目追加生成常见的工程化能力，例如使用 jest 编写测试
+   7. 依赖预打包: 开箱即用的依赖预打包能力，帮助 Node.js 框架/库提升稳定性、不受上游依赖更新影响（实验性）
+   8. TODO: sourceMap 正确配置
 
 ## package.json 配置说明
 

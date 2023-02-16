@@ -1,6 +1,7 @@
 # webpack
 
 - 官站 [webpack](https://webpack.js.org/)
+- https://webpack.js.org/guides/author-libraries/#authoring-a-library
 
 webpack 支持打包 lib 库
 
